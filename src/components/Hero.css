@@ -1,0 +1,362 @@
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* floating dots */
+.hero-dots { position: absolute; inset: 0; pointer-events: none; }
+.dot {
+  position: absolute;
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: #06b6d4;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-left { flex: 1; max-width: 580px; }
+
+.hero-greeting {
+  font-size: 1.1rem;
+  color: #94a3b8;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.hero-name {
+  font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 14px;
+  color: #e2e8f0;
+}
+
+.name-highlight {
+  background: linear-gradient(135deg, #06b6d4, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-title-wrap { height: 34px; overflow: hidden; margin-bottom: 18px; }
+
+.hero-title {
+  font-size: 1.15rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.hero-bio {
+  color: #64748b;
+  line-height: 1.8;
+  margin-bottom: 28px;
+  font-size: 0.93rem;
+  max-width: 500px;
+}
+
+/* Buttons */
+.hero-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.btn-primary {
+  padding: 11px 28px;
+  background: linear-gradient(135deg, #06b6d4, #7c3aed);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  box-shadow: 0 4px 20px rgba(6,182,212,0.3);
+  transition: all 0.2s;
+}
+
+.btn-ghost {
+  padding: 10px 20px;
+  background: transparent;
+  color: #94a3b8;
+  border: 1px solid rgba(100,116,139,0.35);
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+
+.btn-ghost:hover {
+  border-color: #06b6d4;
+  color: #06b6d4;
+}
+
+/* Profile card */
+.profile-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 24px;
+  margin-bottom: 24px;
+  border-radius: 18px;
+  background: rgba(88, 28, 135, 0.25);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 4px 30px rgba(124,58,237,0.15);
+}
+
+.profile-card-avatar {
+  width: 58px; height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; font-weight: 800; color: #fff;
+  flex-shrink: 0;
+  box-shadow: 0 0 18px rgba(99,102,241,0.5);
+}
+
+.profile-card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-card-name {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #e2e8f0;
+  margin-bottom: 2px;
+}
+
+.profile-card-role {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border: 1.5px solid #06b6d4;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #06b6d4;
+  text-decoration: none;
+  transition: all 0.2s;
+  background: transparent;
+  width: fit-content;
+}
+
+.btn-download:hover { background: rgba(6,182,212,0.1); }
+
+/* Social icons */
+.hero-socials {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.social-icon-btn {
+  width: 54px; height: 54px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+  flex-shrink: 0;
+}
+
+/* LinkedIn — rounded rectangle with arrow */
+.social-linkedin {
+  border-radius: 14px !important;
+  position: relative;
+}
+
+.social-linkedin::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0; height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 10px solid #0a66c2;
+}
+
+.social-icon-btn:hover {
+  box-shadow: 0 6px 22px rgba(0,0,0,0.45);
+}
+
+/* Right — glowing ring */
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.photo-ring-outer {
+  position: relative;
+  width: 340px; height: 340px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(135deg, #06b6d4, #7c3aed, #ec4899);
+  box-shadow: 0 0 60px rgba(6,182,212,0.35), 0 0 120px rgba(124,58,237,0.2);
+  animation: ring-pulse 3s ease-in-out infinite;
+}
+
+@keyframes ring-pulse {
+  0%,100% { box-shadow: 0 0 60px rgba(6,182,212,0.35), 0 0 120px rgba(124,58,237,0.2); }
+  50%      { box-shadow: 0 0 80px rgba(6,182,212,0.55), 0 0 160px rgba(124,58,237,0.35); }
+}
+
+.photo-ring-inner {
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  background: #0d0d1a;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 50%;
+}
+
+/* orbit icons — center sits exactly on ring border */
+.orbit-icon {
+  position: absolute;
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: #0a0f2e;
+  border: 2px solid #06b6d4;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.15rem;
+  color: #06b6d4;
+  box-shadow: 0 0 16px rgba(6,182,212,0.4);
+  /* center of ring = 50%,50% = 170px,170px
+     icon center on ring: top = 50% + sin(angle)*170 - 26px
+                          left = 50% + cos(angle)*170 - 26px */
+}
+
+/* angle = -45deg (top-right) => cos=-45=0.707, sin=-45=-0.707
+   left = 50% + 0.707*50% - 26px  ≈ 85.4% - 26px
+   top  = 50% - 0.707*50% - 26px  ≈ 14.6% - 26px  */
+.orbit-top-right {
+  top: calc(50% - 0.707 * 50% - 26px);
+  left: calc(50% + 0.707 * 50% - 26px);
+  border-color: #06b6d4;
+  color: #06b6d4;
+  box-shadow: 0 0 16px rgba(6,182,212,0.45);
+}
+
+/* angle = 220deg => cos=220=-0.766, sin=220=-0.643
+   left = 50% + (-0.766)*50% - 26px ≈ 11.7% - 26px
+   top  = 50% + (-0.643)*50% - 26px ≈ 17.9% - 26px  */
+.orbit-bottom-left {
+  top: calc(50% + 0.643 * 50% - 26px);
+  left: calc(50% - 0.766 * 50% - 26px);
+  border-color: #06b6d4;
+  color: #06b6d4;
+  box-shadow: 0 0 16px rgba(6,182,212,0.45);
+}
+
+/* angle = 320deg => cos=320=0.766, sin=320=-0.643
+   left = 50% + 0.766*50% - 26px ≈ 88.3% - 26px
+   top  = 50% + 0.643*50% - 26px ≈ 82.1% - 26px  */
+.orbit-bottom-right {
+  top: calc(50% + 0.643 * 50% - 26px);
+  left: calc(50% + 0.766 * 50% - 26px);
+  border-color: #ec4899;
+  color: #ec4899;
+  background: #1a0a2e;
+  box-shadow: 0 0 16px rgba(236,72,153,0.4);
+}
+
+/* Stats */
+.hero-stats-inline {
+  display: flex;
+  gap: 0;
+  margin-top: 40px;
+  border: 1px solid rgba(6,182,212,0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(6,182,212,0.04);
+  width: fit-content;
+}
+
+.stat-inline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 32px;
+  border-right: 1px solid rgba(6,182,212,0.12);
+}
+
+.stat-inline:last-child { border-right: none; }
+
+.stat-value {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.68rem;
+  color: #475569;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: 28px; left: 50%;
+  transform: translateX(-50%);
+  color: #06b6d4;
+  font-size: 1.1rem;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+@media (max-width: 900px) {
+  .hero-container { flex-direction: column-reverse; text-align: center; }
+  .hero-btns { justify-content: center; }
+  .hero-bio { margin: 0 auto 24px; }
+  .photo-ring-outer { width: 240px; height: 240px; }
+  .hero-stats-inline { margin: 28px auto 0; }
+  .stat-inline { padding: 12px 20px; }
+  .hero-socials { justify-content: center; }
+  .profile-card { margin: 0 auto 22px; }
+}

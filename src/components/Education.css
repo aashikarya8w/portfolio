@@ -1,0 +1,69 @@
+.timeline { position: relative; padding-left: 40px; margin-bottom: 60px; }
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 12px; top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #7c3aed, transparent);
+}
+
+.timeline-item { position: relative; margin-bottom: 32px; }
+
+.timeline-dot {
+  position: absolute;
+  left: -34px; top: 20px;
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.75rem; color: #fff;
+}
+
+.timeline-card { padding: 24px; }
+
+.timeline-header {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  gap: 12px; margin-bottom: 8px; flex-wrap: wrap;
+}
+
+.timeline-header h3 { font-size: 1.05rem; font-weight: 700; color: #e2e8f0; }
+
+.timeline-year { font-size: 0.8rem; color: #06b6d4; font-weight: 600; white-space: nowrap; }
+
+.timeline-inst { color: #94a3b8; font-size: 0.9rem; margin-bottom: 6px; }
+
+.timeline-cgpa { font-size: 0.85rem; color: #94a3b8; margin-bottom: 8px; }
+.timeline-cgpa strong { color: #a855f7; }
+
+.timeline-desc { font-size: 0.85rem; color: #64748b; line-height: 1.6; }
+
+.cert-heading {
+  font-size: 1.4rem; font-weight: 700;
+  background: linear-gradient(135deg, #a855f7, #06b6d4);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  margin-bottom: 24px; text-align: center;
+}
+
+.cert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+
+.cert-card { padding: 0; text-align: center; transition: all 0.2s; overflow: hidden; }
+.cert-card:hover { border-color: rgba(168,85,247,0.4); transform: translateY(-4px); }
+
+.cert-img-wrap { width: 100%; height: 140px; overflow: hidden; }
+.cert-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+.cert-card:hover .cert-img { transform: scale(1.06); }
+
+.cert-body { padding: 18px; }
+
+.cert-icon { font-size: 2rem; color: #a855f7; margin-bottom: 12px; }
+
+.cert-card h4 { font-size: 0.95rem; font-weight: 700; color: #e2e8f0; margin-bottom: 6px; }
+.cert-card p { font-size: 0.82rem; color: #64748b; margin-bottom: 12px; }
+
+.cert-link {
+  font-size: 0.82rem; color: #06b6d4; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 4px;
+  border-bottom: 1px solid rgba(6,182,212,0.3); padding-bottom: 2px;
+}
+.cert-link:hover { color: #a855f7; }

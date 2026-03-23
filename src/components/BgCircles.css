@@ -1,0 +1,30 @@
+.bg-circles {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.18;
+}
+
+.circle-1 { width: 600px; height: 600px; background: #7c3aed; top: -150px; left: -100px; }
+.circle-2 { width: 500px; height: 500px; background: #06b6d4; top: 30%; right: -120px; }
+.circle-3 { width: 400px; height: 400px; background: #a855f7; bottom: 5%; left: 15%; }
+.circle-4 { width: 350px; height: 350px; background: #ec4899; top: 55%; left: -80px; }
+.circle-5 { width: 500px; height: 500px; background: #7c3aed; bottom: -120px; right: 5%; }
+
+/* Floating dots — all pages */
+.bg-dot {
+  position: absolute;
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: #06b6d4;
+  pointer-events: none;
+}
