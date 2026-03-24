@@ -27,7 +27,7 @@ export const skills = {
     { name: 'Git',         level: 80, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
     { name: 'GitHub',      level: 82, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
   ],
-  soft: ['Problem-Solving', 'Collaboration', 'Adaptability', 'Communication', 'Time Management', 'Critical Thinking', 'Debugging', 'Self-Learning', 'Attention to Detail'],
+  soft: ['Problem-Solving', 'Collaboration', 'Adaptability', 'Critical Thinking', 'Self-Learning', 'Attention to Detail'],
 }
 
 export const projects = [
