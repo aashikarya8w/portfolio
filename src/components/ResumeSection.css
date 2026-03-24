@@ -1,0 +1,54 @@
+#resume-section { padding-top: 20px; min-height: unset; }
+
+.rs-header { text-align: center; margin-bottom: 40px; }
+.rs-sub { color: #64748b; font-size: 0.92rem; margin-top: 10px; }
+
+.rs-card {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 32px;
+  border-radius: 20px;
+  border: 1px solid rgba(168,85,247,0.2);
+  background: rgba(15,12,35,0.7);
+  text-align: center;
+}
+
+.rs-preview {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(168,85,247,0.25);
+  margin-bottom: 28px;
+}
+
+.rs-preview img { width: 100%; display: block; }
+
+.rs-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.rs-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 26px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.rs-btn:hover { opacity: 0.85; }
+
+.rs-btn-outline {
+  background: transparent;
+  border: 1px solid rgba(168,85,247,0.6);
+  color: #a855f7;
+}
+
+.rs-btn-outline:hover { background: rgba(168,85,247,0.1); opacity: 1; }

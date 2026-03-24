@@ -8,6 +8,7 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Education from './components/Education'
 import Achievements from './components/Achievements'
+import ResumeSection from './components/ResumeSection'
 import Resume from './components/Resume'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -44,6 +45,7 @@ export default function App() {
               <Projects />
               <Education />
               <Achievements />
+              <ResumeSection />
               <Resume />
               <Contact />
             </main>

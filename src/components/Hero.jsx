@@ -98,7 +98,7 @@ export default function Hero() {
             <div className="profile-card-info">
               <p className="profile-card-name">{personal.name.split(' ')[0]}</p>
               <p className="profile-card-role">Developer</p>
-              <a href="/portfolio/resume.pdf" download className="btn-download">
+              <a href="/resume.pdf" download className="btn-download">
                 Download CV <FaDownload size={13} />
               </a>
             </div>

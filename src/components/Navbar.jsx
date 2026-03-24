@@ -19,8 +19,9 @@ const links = [
   { label: 'Projects',     id: 'projects',     icon: <FaFolderOpen />,   num: '04' },
   { label: 'Education',    id: 'education',    icon: <FaGraduationCap />,num: '05' },
   { label: 'Achievements', id: 'achievements', icon: <FaTrophy />,       num: '06' },
-  { label: 'Training',      id: 'resume',       icon: <FaFileAlt />,      num: '07' },
-  { label: 'Contact',      id: 'contact',      icon: <FaEnvelope />,     num: '08' },
+  { label: 'Resume',       id: 'resume-section', icon: <FaFileAlt />,    num: '07' },
+  { label: 'Training',     id: 'resume',        icon: <FaFileAlt />,      num: '08' },
+  { label: 'Contact',      id: 'contact',       icon: <FaEnvelope />,     num: '09' },
 ]
 
 export default function Navbar() {
